@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Привет!</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Arial", sans-serif;
+            font-size: 2em;
+            background: #ffe6f2;
+            color: #d63384;
+            position: relative;
+            overflow: hidden;
+        }
+        .heart {
+            position: absolute;
+            font-size: 2rem;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.7;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) scale(1); }
+            100% { transform: translateY(-10vh) scale(1.4); }
+        }
+    </style>
+</head>
+<body>
+    Привет! Хорошего тебе денечка)) 💗
+
+    <!-- Hearts -->
+    <div class="heart" style="left:10%;">💖</div>
+    <div class="heart" style="left:25%; animation-delay:1s;">💗</div>
+    <div class="heart" style="left:40%; animation-delay:2s;">💕</div>
+    <div class="heart" style="left:55%; animation-delay:1.5s;">💞</div>
+    <div class="heart" style="left:70%; animation-delay:0.5s;">💓</div>
+    <div class="heart" style="left:85%; animation-delay:2.5s;">💘</div>
+
+</body>
+</html>
